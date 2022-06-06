@@ -1,0 +1,6 @@
+# Write Your Answers To TODO1 Here
+
+.tables
+smallint
+address id, store id
+description

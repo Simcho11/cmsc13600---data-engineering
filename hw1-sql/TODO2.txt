@@ -1,0 +1,22 @@
+# Write Your Answers To TODO2 Here
+
+SELECT rental_rate, COUNT(rental_rate) FROM film GROUP BY rental_rate;
+
+select rental_rate, count(1) from film, inventory 
+where inventory.film_id = film.film_id 
+GROUP BY rental_rate;
+
+select rental_rate, count(1) from film, inventory, category, film_category 
+where inventory.film_id = film.film_id 
+and film.film_id = film_category.film_id 
+and category.name = 'Action' 
+GROUP BY rental_rate;
+
+select actor.actor_id, count(1) from actor, film_actor, film, film_category, category 
+where actor.actor_id = film_actor.actor_id 
+and film_actor.film_id = film.film_id
+and film.film_id = film_category.film_id
+and film_category.category_id = category.category_id
+and category.name = 'Horror'
+group by actor.actor_id
+having count(1) > 5;
