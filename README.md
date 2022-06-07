@@ -1,5 +1,5 @@
 # cmsc13600
-This is a repository of the homeworks I completed as a part of CMSC13600. These homeworks were completed Spring of 2022 and were all done in Python.
+This is a repository of the homeworks I completed as a part of CMSC13600 - Data Engineering. These homeworks were completed Spring of 2022 and were all done in Python.
 
 ## HW1: SQL and Relational Data Modeling
 This assignment focused on working with relational databases with SQL and Python. We were given a relational database of a video rental store and had to link its tables in order to solve problems.
