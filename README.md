@@ -1,46 +1,58 @@
-# cmsc15400
-This is a repository of the projects I completed as a part of CMSC15400. These projects were completed Spring of 2022 and were all done in C.
+# cmsc13600
+This is a repository of the homeworks I completed as a part of CMSC13600. These homeworks were completed Spring of 2022 and were all done in Python.
 
-## P1: Bit Manipulation
-Here we were given "puzzles" to solve using bit manipulation - pretty straight forward. This project was very interesting and enjoyable as I had never worked with shifting bits to this degree before.
-
-**Successes**
-- Got a perfect score
-- Most solutions are extremely efficient
-
-**Room for Improvement**
-- Some solutions could be more efficient
-
-**Takeaways**
-- Got much better at understanding bit manipulation
-- Got comfortable using bit manipulation
-
-## P3: Cache
-In this project I programmed a cache simulator. This cache simulator takes a valgrind memory trace as input and simulates the hit/miss behavior of cache memory. I used the allocate-on-write policy to handle write misses and the least-recently-used policy to handle evictions. I found implementing LRU was a uniquely challenging problem.
+## HW1: SQL and Relational Data Modeling
+This assignment focused on working with relational databases with SQL and Python. We were given a relational database of a video rental store and had to link its tables in order to solve problems.
 
 **Successes**
 - Got a perfect score
-- Lots of comments to clearly explain what is going on
+- SQL queries all return the data I want
 
 **Room for Improvement**
-- Have extra unused variables and junk
-- Certain tasks may have been better handled with the use of helper functions for clarity
+- Lots of messy Python
 
 **Takeaways**
-- A better understanding of how cache eviction works
+- Got very comfortable using SQL
 
-## P4: Shell
-For this project I programmed my own shell from scratch. This shell is able to parse a command line into arguments and create a child process which run the command. When the child process finishes, the shell then prompts the user again for another command.
+## HW2: Entity Resolution
+In this homework assignment I was tasked with matching products from a Google catalogue to an Amazon catalogue. Because the tables were not layed out in the same manner and had slightly different data for each product, I had to use entity resolution techniques such as Jaccard simularity and Levenshtein (edit) distance.
 
 **Successes**
-- Created a shell that can run pretty much anything the Unix shell can
+- Got a perfect score (over 50% match rate in under 5 minutes)
 
 **Room for Improvement**
-- Did not get a fully correct result
-- Extremely unoptimized
-- Very hard to read
+- Python is extremely messy
+- Could certainly be more optimized - yields almost bare minimum results
+- Other more advanced techniques would have worked better
 
 **Takeaways**
-- A deep understanding of how child processes work
-- Practice parsing C "strings"
+- Experience working with data sets that don't work well with each other
+- Better understanding of entity resolution and its application
+
+## HW3: Bloom Filter
+In this assignment I took a concept I already knew well (hashing) and made it more complicated by implementing a bloom filter.
+
+**Successes**
+- Created a program that can generate bloom filters as well as put things into a bloom filter and check to see if something is in a bloom filter
+
+**Room for Improvement**
+- Could've had a "better looking" solution by using lambdas
+
+**Takeaways**
+- Learned what a bloom filter was
+- Better understanding of the idea behind hashing and how it works
+
+## HW4: NYC Taxi Data
+This assignment utilized GeoPandas (and rtrees)to analyze New York taxi data pre and post pandemic in order to determine certain impacts the pandemic had on New York. Used a New York shapefile as well as taxi and business longitude and latitude coordinates to determine certain truths about the impact of the pandemic.
+
+**Successes**
+- Successfully utilized GeoPandas and rtrees to answer all the questions
+
+**Room for Improvement**
+- Certain solutions run for a long time (unoptimized)
+
+**Takeaways**
+- This was a very challenging assignment and I was proud of myself for completing it
+- Learned what rtrees were
+- Got practice using GeoPandas for the first time
 
